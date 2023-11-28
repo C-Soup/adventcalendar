@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.redback{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(41, 1, 1), #9c0a0a);
+    color: white;
+    background-size: auto;
+}
+
+.container{
+    width: 800px;
+    height: 180px;
+    padding-top: 125px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock{
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hrs::after{
+    content: 'STUNDEN';
+}
+
+#min::after{
+    content: 'MINUTEN';
+}
+
+#sec::after{
+    content: 'SEKUNDEN';
+}
+
+.topclocktext{
+    font-size: xx-large;
+    font-family: brush script mt, cursive;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subclocktext{
+    font-size: xx-large;
+    font-family: brush script mt, cursive;
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.picContainer{
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    padding-top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+
+.picture{
+    max-width: 800px;
+    min-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.daysUntilChristmas{
+    font-size: xx-large;
+    font-family: brush script mt, cursive;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 500px;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message{
+    font-size: xx-large;
+    font-family: brush script mt, cursive;
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
