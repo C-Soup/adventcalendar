@@ -6,7 +6,6 @@ function changeTime(){
 
     let date = new Date();
 
-    let day = 24;
     let hrs = date.getHours();
     let mins = date.getMinutes();
     let secs = date.getSeconds(); 
@@ -17,7 +16,7 @@ function changeTime(){
     document.getElementById("picture").src = ("pictures/" + "pic" + day.toString() + ".jpeg");
     document.getElementById("message").innerHTML = ("Sascha, du bist " + messages[(day - 1)] + "!");
     document.getElementById("christmascountdown").innerHTML = "... und noch " + ((24 - date.getDate()).toString()) + " Tage bis Weihnachten";
-    document.getElementById("test").innerHTML = ("pictures/" + "pic" + day.toString() + ".jpeg")
+
     /*
     if (hrs == 0 && lockRefresh == False) {
         document.getElementById("picture").src = ("pictures/" + date.getDate() + ".png");
