@@ -6,6 +6,7 @@ function changeTime(){
 
     let date = new Date();
 
+    let day = date.getDate();
     let hrs = date.getHours();
     let mins = date.getMinutes();
     let secs = date.getSeconds(); 
